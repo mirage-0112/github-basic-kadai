@@ -22,4 +22,10 @@ public class Dictionary_Chapter21 {
     public String getMeaning(String word) {
         return dictionaryMap.getOrDefault(word, "辞書に存在しません");
     }
+
+    public void searchWords(String[] words) {
+        for (String word : words) {
+            System.out.println(word + "の意味は" + getMeaning(word));
+        }
+    }
 }

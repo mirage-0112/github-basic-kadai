@@ -1,6 +1,6 @@
 package kadai_021;
 
-import java.util.HashMap;;
+import java.util.HashMap;
 
 public class Dictionary_Chapter21 {
     private HashMap<String, String> dictionaryMap;
@@ -19,7 +19,7 @@ public class Dictionary_Chapter21 {
         dictionaryMap.put("cherry", "さくらんぼ");
     }
 
-    public HashMap<String, String> getDictionaryMap() {
-        return dictionaryMap;
+    public String getMeaning(String word) {
+        return dictionaryMap.getOrDefault(word, "辞書に存在しません");
     }
 }
